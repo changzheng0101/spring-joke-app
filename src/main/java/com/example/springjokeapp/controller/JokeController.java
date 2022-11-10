@@ -20,6 +20,7 @@ public class JokeController {
 
     @RequestMapping("/")
     public String getJoke(Model model){
+
         System.out.println("testxxxxxxxxxxxxhehlo");
         model.addAttribute("joke", jokeService.getJoke());
         return "index";
